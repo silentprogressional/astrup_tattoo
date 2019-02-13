@@ -134,6 +134,6 @@ STATICFILES_DIRS = [
     STATIC_DIR,
 ]
 
-LOGIN_URL = 'myApp/user_login'
+LOGIN_URL = 'myApp/userLogin'
 
 AUTH_USER_MODEL = 'myApp.Users'

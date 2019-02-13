@@ -22,7 +22,9 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('index', views.index, name='index'),
     path('aboutus', views.aboutus, name='aboutus'),
-    path('logout', views.logout, name='logout'),
-    path('user_login', views.user_login, name='login'),
+    path('logout', views.user_logout, name='logout'),
+    path('userLogin', views.userLogin.as_view(), name='login'),
+    path('formView', views.formView.as_view(), name='register'),
     path('myApp/', include('myApp.urls')),
+
 ]

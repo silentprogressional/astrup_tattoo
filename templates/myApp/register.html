@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "myApp/header.html" %}
+{% block body %}
+    <form class="form"  enctype= "multipart/form-data" method = "POST">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" class="btn btn-primary" value="submit">
+    </form>
+{% endblock %}
+
+

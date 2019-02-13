@@ -1,9 +1,10 @@
-from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
 from myApp import views
+
 
 urlpatterns = [
 
-    path('user_login', views.user_login, name='login'),
+    path('userLogin', views.userLogin.as_view(), name='login'),
+    path('formView', views.formView.as_view()),
 
 ]
