@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from myApp.models import Users
 from . import forms
-from django.contrib.auth import login,logout,authenticate
+from django.contrib.auth import login, logout, authenticate
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
-from django.views.generic import TemplateView , View
+from django.views.generic import TemplateView, View
 
 # Create your views here.
 
@@ -57,16 +57,17 @@ class formView(View):
 
                 try:
                     record = Users.objects.get(email=form.cleaned_data['email'])
-                    return render(request, 'myApp/errorpage.html')
+                    record = "This email address already exist"
+                    return render(request, 'myApp/errorpage.html', context={'error': record})
                 except Users.DoesNotExist:
                     user = form.save(commit=False)
                     user.set_password(user.password)
                     user.save()
                     return render(request, 'myApp/successpage.html', context={'username': form.cleaned_data['username']})
             except Exception as a:
-                return render(request, 'myApp/errorpage.html')
+                return render(request, 'myApp/errorpage.html', context={'error': a})
         else:
-            return HttpResponse('Form is not valid')
+            return HttpResponse(form._errors)
 
     def get(self, request, *args, **kwargs):
         form = self.form

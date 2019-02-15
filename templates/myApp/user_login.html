@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 {% extends "myApp/header.html" %}
 {% block body %}
-    <div id="login">
-        <h3 class="text-center text-white pt-5">Login form</h3>
+    <link rel="stylesheet" href="../../static/myApp/Css/style.css">
+    <div style="margin-top:10%" id="login">
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
@@ -19,11 +19,10 @@
                                 <input type="text" name="password" id="password" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
                                 <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
                             </div>
                             <div id="register-link" class="text-right">
-                                <a href={% url 'index' %} class="text-info">Register here</a>
+                                <a href={% url 'register' %} class="text-info">Register here</a>
                             </div>
                         </form>
                     </div>
