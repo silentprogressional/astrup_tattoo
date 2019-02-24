@@ -12,3 +12,10 @@ class Users(AbstractUser):
 
     def __str__(self):
         return self.username
+
+
+class Contacts(models.Model):
+    username = models.CharField(max_length=50)
+    email = models.EmailField(max_length=50)
+    phoneNumber = models.CharField(max_length=14)
+    message = models.CharField(max_length=500)

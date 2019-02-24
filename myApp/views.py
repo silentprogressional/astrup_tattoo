@@ -1,11 +1,13 @@
 from django.shortcuts import render
-from myApp.models import Users
+from myApp.models import Users, Contacts
 from . import forms
 from django.contrib.auth import login, logout, authenticate
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 from django.views.generic import TemplateView, View
+from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
 
 # Create your views here.
 
@@ -76,8 +78,21 @@ class formView(View):
         else:
             return render(request, 'myApp/register.html', context={'form': form})
 
+@method_decorator(csrf_exempt, name='dispatch')
+class contactView(View):
 
+    def post(self, request, *args, **kwargs):
 
+        contact = Contacts.objects.create(username=request.POST.get('name'),
+                                          email=request.POST.get('email'),
+                                          phoneNumber=request.POST.get('phone'),
+                                          message=request.POST.get('message'))
+
+        try:
+            contact.save()
+            return render(request, 'myApp/successpage.html')
+        except Exception as A:
+            print(A)
 
 
 

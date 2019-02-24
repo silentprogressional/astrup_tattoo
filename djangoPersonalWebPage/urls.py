@@ -25,6 +25,7 @@ urlpatterns = [
     path('logout', views.user_logout, name='logout'),
     path('userLogin', views.userLogin.as_view(), name='login'),
     path('formView', views.formView.as_view(), name='register'),
+    path('contactView', views.contactView.as_view(), name='contact'),
     path('myApp/', include('myApp.urls')),
 
 ]

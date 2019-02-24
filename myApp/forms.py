@@ -1,6 +1,6 @@
 from django import forms
 from django.core import validators
-from myApp.models import Users
+from myApp.models import Users, Contacts
 
 
 class UserForm(forms.ModelForm):
@@ -31,3 +31,4 @@ class UserForm(forms.ModelForm):
         except Exception as A:
             print(A)
             raise forms.ValidationError(A)
+
