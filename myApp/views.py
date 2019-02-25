@@ -21,10 +21,6 @@ def user_logout(request):
     return HttpResponseRedirect(reverse('index'))
 
 
-def aboutus(request):
-    return render(request, 'myApp/aboutus.html')
-
-
 class userLogin(TemplateView):
 
     def post(self, request, *args, **kwargs):
@@ -46,7 +42,7 @@ class userLogin(TemplateView):
     def get(self, request, *args, **kwargs):
         return render(request, 'myApp/user_login.html')
 
-
+@method_decorator(login_required, name='dispatch')
 class formView(View):
     form = forms.UserForm
 
@@ -69,24 +65,21 @@ class formView(View):
             except Exception as a:
                 return render(request, 'myApp/errorpage.html', context={'error': a})
         else:
-            return HttpResponse(form._errors)
+            return render(request, 'myApp/errorpage.html', context={'error': form.errors})
 
     def get(self, request, *args, **kwargs):
         form = self.form
-        if request.user.is_authenticated:
-            return render(request, 'myApp/logoutFirst.html')
-        else:
-            return render(request, 'myApp/register.html', context={'form': form})
+        return render(request, 'myApp/register.html', context={'form': form})
 
+
+#to disable csrf token
 @method_decorator(csrf_exempt, name='dispatch')
 class contactView(View):
 
     def post(self, request, *args, **kwargs):
 
-        contact = Contacts.objects.create(username=request.POST.get('name'),
-                                          email=request.POST.get('email'),
-                                          phoneNumber=request.POST.get('phone'),
-                                          message=request.POST.get('message'))
+        contact = Contacts.objects.create(username=request.POST.get('name'), email=request.POST.get('email'),
+                                          phoneNumber=request.POST.get('phone'), message=request.POST.get('message'))
 
         try:
             contact.save()
