@@ -6,12 +6,11 @@ from email.mime.text import MIMEText
 port = 587  # For starttls
 smtp_server = "smtp.gmail.com"
 sender_email = "infobaturay@gmail.com"
-receiver_email = "baturayucer@gmail.com"
-password = "your_password"
+password = "password"
 
 
-
-def sendmail(body):
+def sendmail(body, target="baturayucer@gmail.com"):
+    receiver_email = target
     message = MIMEMultipart()
     message["From"] = sender_email
     message["To"] = receiver_email

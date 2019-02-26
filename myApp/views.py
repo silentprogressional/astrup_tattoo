@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from myApp import sendEmail
+from myApp import sendEmail, models
 from myApp.models import Users, Contacts
 from . import forms
 from django.contrib.auth import login, logout, authenticate
@@ -10,7 +10,8 @@ from django.contrib.auth.decorators import login_required
 from django.views.generic import TemplateView, View
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
-
+import string
+import random
 
 # Create your views here.
 
@@ -23,6 +24,23 @@ def user_logout(request):
     logout(request)
     return HttpResponseRedirect(reverse('index'))
 
+class forgotPass(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'myApp/forgotPass.html')
+
+    def post(self, request, *args, **kwargs):
+        email = request.POST.get('email')
+        record = models.Users.objects.get(email=email)
+        letters = string.ascii_lowercase
+        newpass = ''.join(random.choice(letters) for i in range(10))
+        try:
+            record.set_password(newpass)
+            record.save()
+            body = f"Your new password is: {newpass}"
+            sendEmail.sendmail(body, target=record.email)
+            return render(request, 'myApp/passwordChangeSuccess.html', context={'email': record.email})
+        except Exception as a:
+            return render(request, 'myApp/errorpage.html', context={'error': a})
 
 class userLogin(TemplateView):
 
