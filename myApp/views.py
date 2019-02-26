@@ -1,4 +1,6 @@
 from django.shortcuts import render
+
+from myApp import sendEmail
 from myApp.models import Users, Contacts
 from . import forms
 from django.contrib.auth import login, logout, authenticate
@@ -8,6 +10,7 @@ from django.contrib.auth.decorators import login_required
 from django.views.generic import TemplateView, View
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
+
 
 # Create your views here.
 
@@ -82,6 +85,8 @@ class contactView(View):
                                           phoneNumber=request.POST.get('phone'), message=request.POST.get('message'))
 
         try:
+            sendEmail.sendmail(body=contact.message + '\nFrom: ' + contact.email +
+                                    f'\nName: {contact.username}'+ f'\nPhone: {contact.phoneNumber}')
             contact.save()
             return render(request, 'myApp/successpage.html')
         except Exception as A:
