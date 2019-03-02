@@ -15,6 +15,8 @@ import random
 
 # Create your views here.
 
+def blogPage(request):
+    return render(request, 'myApp/blogPage.html')
 
 def index(request):
     return render(request, 'myApp/index.html')

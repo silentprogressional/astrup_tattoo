@@ -26,6 +26,7 @@ urlpatterns = [
     path('formView', views.formView.as_view(), name='register'),
     path('contactView', views.contactView.as_view(), name='contact'),
     path('forgotPass', views.forgotPass.as_view(), name='forgot'),
+    path('blogPage', views.blogPage, name='blogPage'),
     path('myApp/', include('myApp.urls')),
 
 ]
