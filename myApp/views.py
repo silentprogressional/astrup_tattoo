@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 from myApp import sendEmail, models
-from myApp.models import Users, Contacts
+from myApp.models import Users, Contacts, Posts ,Comments
 from . import forms
 from django.contrib.auth import login, logout, authenticate
 from django.http import HttpResponseRedirect, HttpResponse
@@ -15,11 +15,27 @@ import random
 
 # Create your views here.
 
+
+@login_required()
+def adminPage(request):
+    return render(request, 'myApp/adminPage.html')
+
+
 def blogPage(request):
     return render(request, 'myApp/blogPage.html')
 
+
+def postPage(request):
+    postnumber = int(request.GET.get('postid'))
+    post = models.Posts.objects.get(pk=postnumber)
+    author = models.Users.objects.get(pk=post.author_id)
+    comment = models.Comments.objects.filter(post_id=post.id)
+    return render(request, 'myApp/postPage.html', context={'post': post, 'author': author, 'comment': comment})
+
+
 def index(request):
     return render(request, 'myApp/index.html')
+
 
 @login_required
 def user_logout(request):
@@ -54,7 +70,7 @@ class userLogin(TemplateView):
         if user:
             if user.is_active:
                 login(request, user)
-                return HttpResponseRedirect(reverse('index'))
+                return HttpResponseRedirect(reverse('adminPage'))
             else:
                 return HttpResponse('Account is not active')
         else:
@@ -65,12 +81,13 @@ class userLogin(TemplateView):
     def get(self, request, *args, **kwargs):
         return render(request, 'myApp/user_login.html')
 
-@method_decorator(login_required, name='dispatch')
+
+#@method_decorator(login_required, name='dispatch')
 class formView(View):
     form = forms.UserForm
 
     def post(self, request, *args, **kwargs):
-        form = forms.UserForm(request.POST)
+        form = forms.UserForm(request.POST, request.FILES)
 
         if form.is_valid():
             try:
@@ -83,6 +100,7 @@ class formView(View):
                 except Users.DoesNotExist:
                     user = form.save(commit=False)
                     user.set_password(user.password)
+                    user.loginIp = cli_addr
                     user.save()
                     return render(request, 'myApp/successpage.html', context={'username': form.cleaned_data['username']})
             except Exception as a:
@@ -96,6 +114,8 @@ class formView(View):
 
 
 #to disable csrf token
+
+
 @method_decorator(csrf_exempt, name='dispatch')
 class contactView(View):
 

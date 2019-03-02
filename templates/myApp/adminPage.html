@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "myApp/header.html" %}
+{% block body %}
+    <link rel="stylesheet" href="../../static/myApp/Css/style.css">
+    <div align="center">
+        <h1 > Hello Admin</h1>
+        <h3 > What would you like to do?</h3>
+        <br><br>
+        <ul class="list-unstyled">
+            <li><a class="btn btn-primary" style="width: 40%; height: 10%" href="#">Publish A New Post</a> </li> <br>
+            <li><a class="btn btn-primary" style="width: 40%; height: 10%" href="#">Edit Existing Posts</a> </li> <br>
+            <li><a class="btn btn-primary" style="width: 40%; height: 10%" href="{% url 'register' %}">Add a new admin</a> </li> <br>
+        </ul>
+        </div>
+    </body>
+{% endblock %}

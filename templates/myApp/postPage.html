@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>x
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Baturay">
+
+  <title>Baturay Ucer Personal Page</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../static/myApp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../static/myApp/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Plugin CSS -->
+  <link href="../../static/myApp/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="../../static/myApp/Css/freelancer.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href={% url 'index' %}>
+          <img src="../../static/myApp/media/logo1.png" alt="Logo" style="width:200px">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{% url 'index' %}">Main Page</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{% url 'blogPage' %}">Posts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <br> <br> <br> <br> <br> <br>
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">{{ post.title }}</h1>
+
+        <!-- Author -->
+        <p class="lead">
+          by
+          <a href="#">{{ post.author.username }}</a>
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>{{ post.pubdate }}</p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src={{ post.postPic }} alt="http://placehold.it/900x300">
+
+        <hr>
+
+        <!-- Post Content -->
+        <p class="lead">
+            Lead
+            {{ post.beginning }}
+        </p>
+
+       {% comment %} <blockquote class="blockquote">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">Someone famous in
+            <cite title="Source Title">Source Title</cite>
+          </footer>
+        </blockquote>{% endcomment %}
+        {{ post.main }}
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+
+        <hr>
+
+        <!-- Comments Form -->
+        <div class="card my-4">
+          <h5 class="card-header">Leave a Comment:</h5>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Single Comment -->
+          {% for com in comment %}
+
+        <div class="media mb-4">
+          <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+          <div class="media-body">
+            <h5 class="mt-0">{{ com.comment }}</h5>
+            {{ com.comment }}
+          </div>
+        </div>
+          {% endfor %}
+
+
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+        <br>
+        <!-- Search Widget -->
+        <div class="card">
+          <img src={{ author.avatar }} alt="Avatar" style="width:100%">
+          <br>
+          <div class="container">
+            <h4><b>{{ post.author.first_name }} {{ post.author.last_name }}</b></h4>
+            <p>Author</p>
+          </div>
+        </div>
+
+
+
+        <!-- Side Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">About Author</h5>
+          <div class="card-body">
+            {{ author.about }}
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../../static/myApp/vendor/jquery/jquery.min.js"></script>
+  <script src="../../static/myApp/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

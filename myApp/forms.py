@@ -6,15 +6,19 @@ from myApp.models import Users, Contacts
 class UserForm(forms.ModelForm):
 
     username = forms.CharField(help_text=False)
+    first_name = forms.CharField(required=True)
+    last_name = forms.CharField(required=True)
     vmail = forms.EmailField(label="verify your email")
+    phoneNumber = forms.CharField(required=True)
     password = forms.CharField(widget=forms.PasswordInput())
     vpassword = forms.CharField(widget=forms.PasswordInput(), label="verify your password")
-    #avatar = forms.ImageField()
+    about = forms.CharField(widget=forms.Textarea)
+    avatar = forms.ImageField()
     bot = forms.CharField(required=False, widget=forms.HiddenInput, validators=[validators.MaxLengthValidator(0)])
 
     class Meta:
         model = Users
-        fields = ('username','email','vmail','password','vpassword', 'bot')
+        fields = ('username','first_name','last_name','email','vmail','phoneNumber','password','vpassword', 'about','avatar', 'bot')
 
     def clean(self):
         try:

@@ -8,10 +8,16 @@
                     <div id="register-box" class="col-md-12">
                         <form align="center" id="register-form" action="{% url 'register' %}" class="form"  enctype= "multipart/form-data" method = "POST">
                             <h3 class="text-center text-info">Register</h3>
-                            <br>  <br>  <br>
+                            <br>
                             <div class="form-group">
                                 <label for="username" class="text-info">Username</label> <br>
                                 {{ form.username }} <br> <br>
+
+                                <label for="first_name" class="text-info">First Name</label> <br>
+                                {{ form.first_name }} <br> <br>
+
+                                <label for="last_name" class="text-info">Last Name</label> <br>
+                                {{ form.last_name }} <br> <br>
 
                                 <label for="email" class="text-info">Email</label> <br>
                                 {{ form.email }} <br> <br>
@@ -19,19 +25,27 @@
                                 <label for="vmail" class="text-info">Verify email</label> <br>
                                 {{ form.vmail }} <br> <br>
 
+                                <label for="phoneNumber" class="text-info">Phone Number</label> <br>
+                                {{ form.phoneNumber }} <br> <br>
+
                                 <label for="password" class="text-info">Password</label> <br>
                                 {{ form.password }} <br> <br>
 
                                 <label for="vpassword" class="text-info">Verify password</label> <br>
                                 {{ form.vpassword }} <br> <br>
 
+                                <label for="about" class="text-info">About You</label> <br>
+                                {{ form.about }}<br> <br>
+
+                                <label for="avatar" class="text-info">Profile Picture</label> <br>
+                                <div style="margin-left: 30%">{{ form.avatar }}</div> <br>
+
                                 {{ form.bot }}
 
                                 {% csrf_token %}
                             </div>
-                            <br>
                             <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
+                                <input style="width: 40%; height: 10%" type="submit" name="submit" class="btn btn-info btn-md" value="submit">
                             </div>
                             <div id="register-link" class="text-right">
                             </div>
