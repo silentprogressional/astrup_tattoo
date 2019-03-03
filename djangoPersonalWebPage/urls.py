@@ -29,6 +29,8 @@ urlpatterns = [
     path('blogPage', views.blogPage, name='blogPage'),
     path('postPage', views.postPage, name='postPage'),
     path('adminPage', views.adminPage, name='adminPage'),
+    path('addComment', views.addComment, name='addComment'),
+    path('addPost', views.addPost.as_view(), name='addPost'),
     path('myApp/', include('myApp.urls')),
 
 ]

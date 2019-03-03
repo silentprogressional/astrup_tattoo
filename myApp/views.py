@@ -12,6 +12,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 import string
 import random
+import datetime
 
 # Create your views here.
 
@@ -21,8 +22,33 @@ def adminPage(request):
     return render(request, 'myApp/adminPage.html')
 
 
+@csrf_exempt
+def addComment(request):
+    commenttext = request.POST.get('comment')
+    name = request.POST.get('name')
+    comment = models.Comments.objects.create(commenter=name, commentDate=datetime.datetime.now(),
+                                             comment=commenttext, post=models.Posts.objects.get(pk=1))
+    comment.save()
+    return HttpResponse('')
+
+
 def blogPage(request):
     return render(request, 'myApp/blogPage.html')
+
+
+@method_decorator(login_required, name='dispatch')
+@method_decorator(csrf_exempt, name='dispatch')
+class addPost(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'myApp/addPost.html')
+
+    def post(self, request, *args, **kwargs):
+        post = models.Posts.objects.create(title=request.POST.get('title'), beginning=request.POST.get('start'),
+                                           main=request.POST.get('main'), author=request.user,
+                                           pubdate=datetime.datetime.now(), category=request.POST.get('category'),
+                                           postPic=request.POST.get('image'))
+        post.save()
+        return HttpResponse('')
 
 
 def postPage(request):
@@ -42,6 +68,7 @@ def user_logout(request):
     logout(request)
     return HttpResponseRedirect(reverse('index'))
 
+
 class forgotPass(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'myApp/forgotPass.html')
@@ -59,6 +86,7 @@ class forgotPass(View):
             return render(request, 'myApp/passwordChangeSuccess.html', context={'email': record.email})
         except Exception as a:
             return render(request, 'myApp/errorpage.html', context={'error': a})
+
 
 class userLogin(TemplateView):
 

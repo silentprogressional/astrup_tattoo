@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>x
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -94,14 +94,44 @@
         <hr>
 
         <!-- Comments Form -->
+        <div class="alert alert-success" id="success-alert" style="display:none"> Your Comment has been added succesfully</div>
+        <div class="alert alert-danger" id="fail-alert" style="display:none"> Something went wrong</div>
         <div class="card my-4">
           <h5 class="card-header">Leave a Comment:</h5>
           <div class="card-body">
-            <form>
+            <form id="commentForm">
               <div class="form-group">
-                <textarea class="form-control" rows="3"></textarea>
+                <label>Your Name:</label>
+                <textarea id="name" class="form-control" rows="1"></textarea>
+                <label>Comment:</label>
+                <textarea id="comment" class="form-control" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button id="btnClick" onclick="clickFunc()" type="button" class="btn btn-primary">Submit</button>
+                <script>
+                    function clickFunc() {
+                      var comment = $("textarea#comment").val();
+                      var name = $("textarea#name").val();
+                            $.ajax({
+                                url: "/addComment",
+                                type: "POST",
+                                data: {
+                                    comment: comment,
+                                    name: name,
+                                },
+                                cache: false,
+                                success: function() {
+                                    // Enable button & show success message
+                                    $("#success-alert").show();
+                                    setTimeout(function() { location.reload(); }, 2000);
+
+                                },
+                                error: function() {
+                                    // Fail message
+                                    $("#fail-alert").show();
+                                },
+                            })
+                    }
+                </script>
             </form>
           </div>
         </div>
@@ -110,9 +140,9 @@
           {% for com in comment %}
 
         <div class="media mb-4">
-          <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+          <img class="d-flex mr-3 rounded-circle" src="../../static/myApp/media/Avatar_boy.png" width="65px" alt="">
           <div class="media-body">
-            <h5 class="mt-0">{{ com.comment }}</h5>
+            <h5 class="mt-0">{{ com.commenter }}</h5>
             {{ com.comment }}
           </div>
         </div>
@@ -163,7 +193,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="../../static/myApp/vendor/jquery/jquery.min.js"></script>
   <script src="../../static/myApp/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 </body>
 </html>
