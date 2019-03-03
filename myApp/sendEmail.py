@@ -6,7 +6,7 @@ from email.mime.text import MIMEText
 port = 587  # For starttls
 smtp_server = "smtp.gmail.com"
 sender_email = "infobaturay@gmail.com"
-password = "897564231"
+password = "password"
 
 
 def sendmail(body, target="baturayucer@gmail.com"):

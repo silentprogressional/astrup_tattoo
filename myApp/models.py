@@ -29,7 +29,7 @@ class Posts(models.Model):
     author = models.ForeignKey(Users, on_delete=models.CASCADE)
     pubdate = models.DateTimeField(auto_now_add=True, blank=True)
     category = models.CharField(max_length=100)
-    postPic = models.ImageField(upload_to='static/myApp/media/postPics/')
+    postPic = models.ImageField(upload_to="static/myApp/media/postPics/")
 
 
 class Comments(models.Model):

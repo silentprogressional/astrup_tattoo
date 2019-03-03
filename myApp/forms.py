@@ -18,7 +18,8 @@ class UserForm(forms.ModelForm):
 
     class Meta:
         model = Users
-        fields = ('username','first_name','last_name','email','vmail','phoneNumber','password','vpassword', 'about','avatar', 'bot')
+        fields = ('username', 'first_name', 'last_name', 'email', 'vmail', 'phoneNumber', 'password',
+                  'vpassword', 'about','avatar', 'bot')
 
     def clean(self):
         try:

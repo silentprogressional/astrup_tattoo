@@ -72,7 +72,7 @@
                 <label>Main:</label>
                 <textarea id="main" class="form-control" rows="5"></textarea><br>
 
-                <input id="image" type="file" name="pic" accept="image/*"> <br>
+                <input id="file-id"  type="file" name="pic" accept="image/*"> <br>
               </div>
 
 
@@ -84,7 +84,8 @@
                       var category = $("textarea#category").val();
                       var start = $("textarea#start").val();
                       var main = $("textarea#main").val();
-                      var image = $("input#image").val();
+                      var image = document.getElementById("file-id").files[0].name;
+
                             $.ajax({
                                 url: "/addPost",
                                 type: "POST",

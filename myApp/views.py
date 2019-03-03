@@ -33,7 +33,8 @@ def addComment(request):
 
 
 def blogPage(request):
-    return render(request, 'myApp/blogPage.html')
+    posts = models.Posts.objects.all()
+    return render(request, 'myApp/blogPage.html', context={'posts': posts})
 
 
 @method_decorator(login_required, name='dispatch')
@@ -46,7 +47,7 @@ class addPost(View):
         post = models.Posts.objects.create(title=request.POST.get('title'), beginning=request.POST.get('start'),
                                            main=request.POST.get('main'), author=request.user,
                                            pubdate=datetime.datetime.now(), category=request.POST.get('category'),
-                                           postPic=request.POST.get('image'))
+                                           postPic="static/myApp/media/postPics/" + request.POST.get('image'))
         post.save()
         return HttpResponse('')
 
