@@ -24,12 +24,17 @@ def adminPage(request):
 
 @csrf_exempt
 def addComment(request):
-    commenttext = request.POST.get('comment')
-    name = request.POST.get('name')
-    comment = models.Comments.objects.create(commenter=name, commentDate=datetime.datetime.now(),
-                                             comment=commenttext, post=models.Posts.objects.get(pk=1))
-    comment.save()
-    return HttpResponse('')
+    try:
+        commenttext = request.POST.get('comment')
+        name = request.POST.get('name')
+        postid = request.POST.get('postid')
+        comment = models.Comments.objects.create(commenter=name, commentDate=datetime.datetime.now(),
+                                                 comment=commenttext, post=models.Posts.objects.get(pk=postid))
+        comment.save()
+        return HttpResponse('')
+    except Exception as a:
+        return render(request, 'myApp/errorpage.html', context={'error': a})
+
 
 
 def blogPage(request):

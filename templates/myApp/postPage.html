@@ -64,10 +64,10 @@
 
         <hr>
 
-        <!-- Date/Time -->
-        <p>{{ post.pubdate }}</p>
+        <!-- Date/Time
+        <p>post.pubdate </p> <hr>-->
 
-        <hr>
+
 
         <!-- Preview Image -->
         <img class="img-fluid rounded" src={{ post.postPic }} alt="http://placehold.it/900x300">
@@ -80,15 +80,22 @@
             {{ post.beginning }}
         </p>
 
-       {% comment %} <blockquote class="blockquote">
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">Someone famous in
-            <cite title="Source Title">Source Title</cite>
-          </footer>
-        </blockquote>{% endcomment %}
         {{ post.main }}
 
         <hr>
+
+          <!-- Single Comment -->
+        <h5> Comments </h5><hr>
+          {% for com in comment %}
+
+        <div class="media mb-4">
+          <img class="d-flex mr-3 rounded-circle" src="../../static/myApp/media/Avatar_boy.png" width="65px" alt="">
+          <div class="media-body">
+            <h5 class="mt-0">{{ com.commenter }}</h5>
+            {{ com.comment }}
+          </div>
+        </div>
+          {% endfor %}
 
         <!-- Comments Form -->
         <div class="alert alert-success" id="success-alert" style="display:none"> Your Comment has been added succesfully</div>
@@ -101,11 +108,14 @@
                 <label>Your Name:</label>
                 <textarea id="name" class="form-control" rows="1"></textarea>
                 <label>Comment:</label>
-                <textarea id="comment" class="form-control" rows="3"></textarea>
+                <textarea id="comment" class="form-control" rows="2"></textarea>
               </div>
               <button id="btnClick" onclick="clickFunc()" type="button" class="btn btn-primary">Submit</button>
                 <script>
                     function clickFunc() {
+                      var url_string = window.location.href;
+                      var url = new URL(url_string);
+                      var postid = url.searchParams.get("postid");
                       var comment = $("textarea#comment").val();
                       var name = $("textarea#name").val();
                             $.ajax({
@@ -114,6 +124,8 @@
                                 data: {
                                     comment: comment,
                                     name: name,
+                                    postid: postid,
+
                                 },
                                 cache: false,
                                 success: function() {
@@ -132,18 +144,6 @@
             </form>
           </div>
         </div>
-
-        <!-- Single Comment -->
-          {% for com in comment %}
-
-        <div class="media mb-4">
-          <img class="d-flex mr-3 rounded-circle" src="../../static/myApp/media/Avatar_boy.png" width="65px" alt="">
-          <div class="media-body">
-            <h5 class="mt-0">{{ com.commenter }}</h5>
-            {{ com.comment }}
-          </div>
-        </div>
-          {% endfor %}
 
 
       </div>
@@ -182,7 +182,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; baturayucer.com 2019</p>
     </div>
     <!-- /.container -->
   </footer>
