@@ -100,7 +100,8 @@
                                 success: function() {
                                     // Enable button & show success message
                                     $("#success-alert").show();
-                                    setTimeout(function() { location.reload(); }, 2000);
+                                    setTimeout(function() { window.location.replace("/blogPage"); }, 2000);
+
 
                                 },
                                 error: function() {

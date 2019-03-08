@@ -2,14 +2,13 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
-from djangoPersonalWebPage.settings import MEDIA_ROOT
 
 
 class Users(AbstractUser):
 
     phoneNumber = models.CharField(max_length=14)
     about = models.CharField(max_length=200)
-    avatar = models.ImageField(upload_to="adminAvatars")
+    avatar = models.ImageField(upload_to="static/myApp/media/adminAvatars/")
     loginIp = models.CharField(max_length=30)
 
     def __str__(self):
@@ -30,7 +29,7 @@ class Posts(models.Model):
     author = models.ForeignKey(Users, on_delete=models.CASCADE)
     pubdate = models.CharField(max_length=50)
     category = models.CharField(max_length=100)
-    postPic = models.ImageField(upload_to="postPics")
+    postPic = models.ImageField(upload_to="static/myApp/media/postPics/")
 
 
 class Comments(models.Model):

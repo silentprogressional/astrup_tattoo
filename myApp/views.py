@@ -38,10 +38,12 @@ def addComment(request):
         return render(request, 'myApp/errorpage.html', context={'error': a})
 
 
-
 def blogPage(request):
-    posts = models.Posts.objects.all()
-    return render(request, 'myApp/blogPage.html', context={'posts': posts})
+    try:
+        posts = models.Posts.objects.all()
+        return render(request, 'myApp/blogPage.html', context={'posts': posts})
+    except Exception as a:
+        return render(request, 'myApp/errorPageAdmin.html', context={'error': a})
 
 
 @method_decorator(login_required, name='dispatch')
@@ -51,22 +53,28 @@ class addPost(View):
         return render(request, 'myApp/addPost.html')
 
     def post(self, request, *args, **kwargs):
-        today = str(datetime.datetime.today()).split()[0].split('-')
-        publishedOn = f"{today[2]}/{today[1]}/{today[0]}"
-        post = models.Posts.objects.create(title=request.POST.get('title'), beginning=request.POST.get('start'),
-                                           main=request.POST.get('main'), author=request.user,
-                                           pubdate=publishedOn, category=request.POST.get('category'),
-                                           postPic="static/myApp/media/postPics/" + request.POST.get('image'))
-        post.save()
-        return HttpResponse('')
+        try:
+            today = str(datetime.datetime.today()).split()[0].split('-')
+            publishedOn = f"{today[2]}/{today[1]}/{today[0]}"
+            post = models.Posts.objects.create(title=request.POST.get('title'), beginning=request.POST.get('start'),
+                                               main=request.POST.get('main'), author=request.user,
+                                               pubdate=publishedOn, category=request.POST.get('category'),
+                                               postPic="static/myApp/media/postPics/" + request.POST.get('image'))
+            post.save()
+            return HttpResponse('')
+        except Exception as a:
+            return render(request, 'myApp/errorPageAdmin.html', context={'error': a})
 
 
 def postPage(request):
-    postnumber = int(request.GET.get('postid'))
-    post = models.Posts.objects.get(pk=postnumber)
-    author = models.Users.objects.get(pk=post.author_id)
-    comment = models.Comments.objects.filter(post_id=post.id)
-    return render(request, 'myApp/postPage.html', context={'post': post, 'author': author, 'comment': comment})
+    try:
+        postnumber = int(request.GET.get('postid'))
+        post = models.Posts.objects.get(pk=postnumber)
+        author = models.Users.objects.get(pk=post.author_id)
+        comment = models.Comments.objects.filter(post_id=post.id)
+        return render(request, 'myApp/postPage.html', context={'post': post, 'author': author, 'comment': comment})
+    except Exception as a:
+        return render(request, 'myApp/errorpage.html', context={'error': a})
 
 
 def index(request):
@@ -84,43 +92,47 @@ class forgotPass(View):
         return render(request, 'myApp/forgotPass.html')
 
     def post(self, request, *args, **kwargs):
-        email = request.POST.get('email')
-        record = models.Users.objects.get(email=email)
-        letters = string.ascii_lowercase
-        newpass = ''.join(random.choice(letters) for i in range(10))
         try:
+            email = request.POST.get('email')
+            record = models.Users.objects.get(email=email)
+            letters = string.ascii_lowercase
+            newpass = ''.join(random.choice(letters) for i in range(10))
+
             record.set_password(newpass)
             record.save()
             body = f"Your new password is: {newpass}"
             sendEmail.sendmail(body, target=record.email)
             return render(request, 'myApp/passwordChangeSuccess.html', context={'email': record.email})
         except Exception as a:
-            return render(request, 'myApp/errorpage.html', context={'error': a})
+            return render(request, 'myApp/errorPageAdmin.html', context={'error': a})
 
 
 class userLogin(TemplateView):
 
     def post(self, request, *args, **kwargs):
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-        user = authenticate(username=username, password=password)
+        try:
+            username = request.POST.get('username')
+            password = request.POST.get('password')
+            user = authenticate(username=username, password=password)
 
-        if user:
-            if user.is_active:
-                login(request, user)
-                return HttpResponseRedirect(reverse('adminPage'))
+            if user:
+                if user.is_active:
+                    login(request, user)
+                    return HttpResponseRedirect(reverse('adminPage'))
+                else:
+                    return HttpResponse('Account is not active')
             else:
-                return HttpResponse('Account is not active')
-        else:
-            print('Someone tried to login and failed')
-            print(f'username: {username}')
-            return HttpResponse('invalid login credentials')
+                print('Someone tried to login and failed')
+                print(f'username: {username}')
+                return HttpResponse('invalid login credentials')
+        except Exception as a:
+            return render(request, 'myApp/errorPageAdmin.html', context={'error': a})
 
     def get(self, request, *args, **kwargs):
         return render(request, 'myApp/user_login.html')
 
 
-#@method_decorator(login_required, name='dispatch')
+@method_decorator(login_required, name='dispatch')
 class formView(View):
     form = forms.UserForm
 
@@ -134,7 +146,7 @@ class formView(View):
                 try:
                     record = Users.objects.get(email=form.cleaned_data['email'])
                     record = "This email address already exist"
-                    return render(request, 'myApp/errorpage.html', context={'error': record})
+                    return render(request, 'myApp/errorPageAdmin.html', context={'error': record})
                 except Users.DoesNotExist:
                     user = form.save(commit=False)
                     user.set_password(user.password)
@@ -142,9 +154,9 @@ class formView(View):
                     user.save()
                     return render(request, 'myApp/successpage.html', context={'username': form.cleaned_data['username']})
             except Exception as a:
-                return render(request, 'myApp/errorpage.html', context={'error': a})
+                return render(request, 'myApp/errorPageAdmin.html', context={'error': a})
         else:
-            return render(request, 'myApp/errorpage.html', context={'error': form.errors})
+            return render(request, 'myApp/errorPageAdmin.html', context={'error': form.errors})
 
     def get(self, request, *args, **kwargs):
         form = self.form
@@ -158,17 +170,16 @@ class formView(View):
 class contactView(View):
 
     def post(self, request, *args, **kwargs):
-
-        contact = Contacts.objects.create(username=request.POST.get('name'), email=request.POST.get('email'),
-                                          phoneNumber=request.POST.get('phone'), message=request.POST.get('message'))
-
         try:
+            contact = Contacts.objects.create(username=request.POST.get('name'), email=request.POST.get('email'),
+                                              phoneNumber=request.POST.get('phone'),
+                                              message=request.POST.get('message'))
             sendEmail.sendmail(body=contact.message + '\nFrom: ' + contact.email +
                                     f'\nName: {contact.username}'+ f'\nPhone: {contact.phoneNumber}')
             contact.save()
             return render(request, 'myApp/successpage.html')
-        except Exception as A:
-            print(A)
+        except Exception as a:
+            return render(request, 'myApp/errorpage.html', context={'error': a})
 
 
 
