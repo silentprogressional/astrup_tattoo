@@ -28,7 +28,9 @@ def addComment(request):
         commenttext = request.POST.get('comment')
         name = request.POST.get('name')
         postid = request.POST.get('postid')
-        comment = models.Comments.objects.create(commenter=name, commentDate=datetime.datetime.now(),
+        today = str(datetime.datetime.today()).split()[0].split('-')
+        commentedOn = f"{today[2]}/{today[1]}/{today[0]}"
+        comment = models.Comments.objects.create(commenter=name, commentDate=commentedOn,
                                                  comment=commenttext, post=models.Posts.objects.get(pk=postid))
         comment.save()
         return HttpResponse('')
@@ -49,9 +51,11 @@ class addPost(View):
         return render(request, 'myApp/addPost.html')
 
     def post(self, request, *args, **kwargs):
+        today = str(datetime.datetime.today()).split()[0].split('-')
+        publishedOn = f"{today[2]}/{today[1]}/{today[0]}"
         post = models.Posts.objects.create(title=request.POST.get('title'), beginning=request.POST.get('start'),
                                            main=request.POST.get('main'), author=request.user,
-                                           pubdate=datetime.datetime.now(), category=request.POST.get('category'),
+                                           pubdate=publishedOn, category=request.POST.get('category'),
                                            postPic="static/myApp/media/postPics/" + request.POST.get('image'))
         post.save()
         return HttpResponse('')
