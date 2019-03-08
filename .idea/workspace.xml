@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a7dcf3c-7af2-43ce-a6bf-4ec8f32c9b66" name="Default Changelist" comment="" />
+    <list default="true" id="1a7dcf3c-7af2-43ce-a6bf-4ec8f32c9b66" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <list id="1ddd0df8-ed2a-4df7-8234-bd3515c635cf" name="venv" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,11 +64,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="442">
-                <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="289">
+                <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myApp/sendEmail.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,7 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>aboutus</find>
       <find>register</find>
       <find>project name</find>
       <find>admin</find>
@@ -122,6 +144,7 @@
       <find>post</find>
       <find>photo</find>
       <find>upload_t</find>
+      <find>med</find>
     </findStrings>
     <replaceStrings>
       <replace>../../js/</replace>
@@ -147,7 +170,6 @@
         <option value="$PROJECT_DIR$/templates/myApp/successpage.html" />
         <option value="$PROJECT_DIR$/.gitignore." />
         <option value="$PROJECT_DIR$/static/myApp/Css/style.css" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/templates/myApp/navbar.html" />
         <option value="$PROJECT_DIR$/static/myApp/mail/contact_me.php" />
@@ -178,6 +200,7 @@
         <option value="$PROJECT_DIR$/myApp/views.py" />
         <option value="$PROJECT_DIR$/myApp/models.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -201,6 +224,11 @@
             <path>
               <item name="djangoPersonalWebPage" type="b2602c69:ProjectViewProjectNode" />
               <item name="djangoPersonalWebPage" type="462c0819:PsiDirectoryNode" />
+              <item name="myApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="djangoPersonalWebPage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="djangoPersonalWebPage" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -215,14 +243,6 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="myApp" type="462c0819:PsiDirectoryNode" />
               <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangoPersonalWebPage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoPersonalWebPage" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="myApp" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="adminAvatars" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="djangoPersonalWebPage" type="b2602c69:ProjectViewProjectNode" />
@@ -369,7 +389,7 @@
       <workItem from="1551891365693" duration="761000" />
       <workItem from="1551894262376" duration="3427000" />
       <workItem from="1551897947742" duration="210000" />
-      <workItem from="1552065302948" duration="1548000" />
+      <workItem from="1552065302948" duration="1801000" />
     </task>
     <task id="LOCAL-00001" summary="commit venv">
       <created>1550084049139</created>
@@ -410,12 +430,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108724000" />
+    <option name="totallyTimeSpent" value="108977000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="510" y="0" width="930" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24436937" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15522175" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -429,7 +450,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.15542169" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.17710844" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.17710844" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007153" side_tool="true" weight="0.27831325" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32871288" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -572,16 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/sendEmail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://562b45f1-ca65-44cb-80ed-8b2542bd3566/schema/main/table/django_admin_log" />
     <entry file="das://562b45f1-ca65-44cb-80ed-8b2542bd3566/schema/main/table/myApp_comments" />
     <entry file="file://$PROJECT_DIR$/static/myApp/media/logo1.png">
@@ -702,11 +713,28 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1d1dd1dc-9aae-4433-9f9b-4022ee777ecc/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/sendEmail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="442">
-            <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="289">
+            <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
           </first_editor>
           <second_editor />
         </state>
