@@ -31,5 +31,6 @@ The application contains two section:
 #To run </br>
 `python manage.py makemigrations` </br>
 `python manage.py migrate` </br>
-`pyton manage.py runserver` </br>
 'python manage.py loaddata admin.json' </br>
+`pyton manage.py runserver` </br>
+

@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a7dcf3c-7af2-43ce-a6bf-4ec8f32c9b66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/myApp/js/addComment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/myApp/js/addPost.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/myApp/media/blogPageBackGround.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myApp/media/adminAvatars/Vesikalık.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myApp/media/postPics/postphoto.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/myApp/media/postPics/postpic.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myApp/media/selfie.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myApp/addPost.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/addPost.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myApp/headerErrorPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/headerErrorPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myApp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myApp/postPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/postPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myApp/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/register.html" afterDir="false" />
-    </list>
+    <list default="true" id="1a7dcf3c-7af2-43ce-a6bf-4ec8f32c9b66" name="Default Changelist" comment="" />
     <list id="1ddd0df8-ed2a-4df7-8234-bd3515c635cf" name="venv" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,13 +32,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/myApp/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="140" selection-start-line="140" selection-end-line="140" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="409">
+                <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -144,7 +129,6 @@
         <option value="$PROJECT_DIR$/templates/myApp/adminPage.html" />
         <option value="$PROJECT_DIR$/myApp/forms.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/myApp/sendEmail.py" />
         <option value="$PROJECT_DIR$/djangoPersonalWebPage/settings.py" />
         <option value="$PROJECT_DIR$/myApp/models.py" />
@@ -158,9 +142,10 @@
         <option value="$PROJECT_DIR$/static/myApp/js/addComment.js" />
         <option value="$PROJECT_DIR$/templates/myApp/postPage.html" />
         <option value="$PROJECT_DIR$/templates/myApp/addPost.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/templates/myApp/index.html" />
         <option value="$PROJECT_DIR$/myApp/views.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -179,17 +164,6 @@
             <path>
               <item name="djangoPersonalWebPage" type="b2602c69:ProjectViewProjectNode" />
               <item name="djangoPersonalWebPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangoPersonalWebPage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoPersonalWebPage" type="462c0819:PsiDirectoryNode" />
-              <item name="myApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangoPersonalWebPage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoPersonalWebPage" type="462c0819:PsiDirectoryNode" />
-              <item name="myApp" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -331,7 +305,7 @@
       <workItem from="1551897947742" duration="210000" />
       <workItem from="1552065302948" duration="5895000" />
       <workItem from="1552110748517" duration="4934000" />
-      <workItem from="1552239100991" duration="1748000" />
+      <workItem from="1552239100991" duration="2081000" />
     </task>
     <task id="LOCAL-00001" summary="commit venv">
       <created>1550084049139</created>
@@ -372,7 +346,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119753000" />
+    <option name="totallyTimeSpent" value="120086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -382,7 +356,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32771084" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.27831325" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.27831325" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38795182" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -391,7 +365,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.15542169" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.34574467" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.34457833" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007153" side_tool="true" weight="0.27831325" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32871288" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -497,7 +471,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/myApp/img/portfolio/circus.png" />
     <entry file="file://$PROJECT_DIR$/static/myApp/img/portfolio/safe.png" />
     <entry file="file://$PROJECT_DIR$/static/myApp/media/adminAvatars/postphoto.png" />
     <entry file="file://$PROJECT_DIR$/static/myApp/media/postPics/vesikalık_linkedin.JPG" />
@@ -705,19 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="153">
-            <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/myApp/media/adminAvatars/Vesikalik.JPG">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -750,10 +710,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://e03146fd-eb95-40e9-8410-4cdf270eb674/schema/main/table/myApp_users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://e03146fd-eb95-40e9-8410-4cdf270eb674/schema/main/table/myApp_users">
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://0f344058-c918-4566-8fd6-754b0427dc9c/schema/main/table/myApp_users">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -767,6 +737,16 @@
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="409">
+            <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
