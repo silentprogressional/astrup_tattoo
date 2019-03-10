@@ -1,9 +1,11 @@
-#Keywords: python, django, bootstrap, javascript, jquery </br>
+**Django Personal Blog Web App**
 
-- This simple full stack website is a way for people to have a very quick and easy personable website that customize your own portfolio with a simple logo, and some description text in a nicely-formatted manner.  </br>
-- You can now create your own personal page easily.  </br>
+**#Keywords: python, django, bootstrap, javascript, jquery **
 
-#There are two main content in app:
+
+
+This project is a way for people to have their own web page that customizes their portfolio and helps them to share their posts in a nicely-formatted manner.</br>
+The application contains two section:
 
 #1) Portfolio Part:
 - This part have been design by single-page design and it helps you to describe yourself and tell about your activities.</br>
@@ -27,6 +29,7 @@
 - Sqlite database is used to store posts, authors and comments.
 </br>
 #To run </br>
-`python manage.py makemigrations`
-`python manage.py migrate`
-`pyton manage.py runserver`
+`python manage.py makemigrations` </br>
+`python manage.py migrate` </br>
+`pyton manage.py runserver` </br>
+'python manage.py loaddata admin.json' </br>

@@ -1,125 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="Baturay">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Baturay">
 
-  <title>Baturay Ucer Personal Page</title>
+    <title>Baturay Ucer Personal Page</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="../../static/myApp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="../../static/myApp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
 
-  <!-- Plugin CSS -->
-  <link href="../../static/myApp/Css/addPost.css" rel="stylesheet" type="text/css">
+    <!-- Plugin CSS -->
+    <link href="../../static/myApp/Css/addPost.css" rel="stylesheet" type="text/css">
 
-  <!-- Custom styles for this template -->
-  <link href="../../static/myApp/Css/freelancer.min.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="../../static/myApp/Css/freelancer.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script src="../../static/myApp/js/addPost.js"></script>
 </head>
-<body >
+<body background="../../static/myApp/media/blogPageBackGround.jpg" style="background-size: cover;">
 <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href={% url 'index' %}>
-          <img src="../../static/myApp/media/logo1.png" alt="Logo" style="width:200px">
-      </a>
-      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{% url 'index' %}">Main Page</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{% url 'blogPage' %}">Posts</a>
-          </li>
-        </ul>
-      </div>
+        <a class="navbar-brand js-scroll-trigger" href={% url 'index' %}>
+            <img src="../../static/myApp/media/logo1.png" alt="Logo" style="width:200px">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button"
+                data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{% url 'index' %}">Main
+                        Page</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                       href="{% url 'blogPage' %}">Posts</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
 <br><br><br>
 
-    <div class="container-fluid">
-  <div class="row no-gutter">
-    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
-    <div class="col-md-8 col-lg-6">
-      <div class="login d-flex align-items-center py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9 col-lg-8 mx-auto">
-                <br>
-                <div class="alert alert-success" id="success-alert" style="display:none"> Your Post has been added succesfully</div>
-                <div class="alert alert-danger" id="fail-alert" style="display:none"> Something went wrong</div>
-              <h3 class="login-heading mb-4">Add new Post</h3>
-              <form>
-                <div class="form-group">
-                <label>Post Title:</label>
-                <textarea id="title" class="form-control" rows="1"></textarea> <br>
+<div class="container-fluid">
+    <div class="row no-gutter">
+        <div class="d-none d-md-flex col-md-4 col-lg-6">
 
-                <label>Category:</label>
-                <textarea id="category" class="form-control" rows="1"></textarea> <br>
-
-                <label>Start:</label>
-                <textarea id="start" class="form-control" rows="2"></textarea><br>
-
-                <label>Main:</label>
-                <textarea id="main" class="form-control" rows="5"></textarea><br>
-
-                <input id="file-id"  type="file" name="pic" accept="image/*"> <br>
-              </div>
-
-
-                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" id="btnClick" onclick="clickFunc()" type="button" >Submit Post</button>
-
-                <script>
-                    function clickFunc() {
-                      var title = $("textarea#title").val();
-                      var category = $("textarea#category").val();
-                      var start = $("textarea#start").val();
-                      var main = $("textarea#main").val();
-                      var image = document.getElementById("file-id").files[0].name;
-
-                            $.ajax({
-                                url: "/addPost",
-                                type: "POST",
-                                data: {
-                                    title: title,
-                                    category: category,
-                                    start: start,
-                                    main: main,
-                                    image: image,
-                                },
-                                cache: false,
-                                success: function() {
-                                    // Enable button & show success message
-                                    $("#success-alert").show();
-                                    setTimeout(function() { window.location.replace("/blogPage"); }, 2000);
-
-
-                                },
-                                error: function() {
-                                    // Fail message
-                                    $("#fail-alert").show();
-
-                                },
-                            })
-                    }
-                </script>
-
-              </form>
-            </div>
-          </div>
         </div>
-      </div>
+        <div class="col-md-8 col-lg-6">
+            <div class="login d-flex align-items-center py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 mx-auto">
+                            <br>
+                            <div class="alert alert-success" id="success-alert" style="display:none"> Your Post has been
+                                added succesfully
+                            </div>
+                            <div class="alert alert-danger" id="fail-alert" style="display:none"> Something went wrong
+                            </div>
+                            <h3 class="login-heading mb-4" style="color: white;">Add new Post</h3>
+                            <form style="color: white">
+                                <div class="form-group">
+                                    <label>Post Title:</label>
+                                    <textarea id="title" class="form-control" rows="1"></textarea> <br>
+
+                                    <label>Category:</label>
+                                    <textarea id="category" class="form-control" rows="1"></textarea> <br>
+
+                                    <label>Start:</label>
+                                    <textarea id="start" class="form-control" rows="2"></textarea><br>
+
+                                    <label>Main:</label>
+                                    <textarea id="main" class="form-control" rows="5"></textarea><br>
+
+                                    <input id="file-id" type="file" name="pic" accept="image/*"> <br>
+                                </div>
+
+
+                                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+                                        id="btnClick" onclick="clickFunc()" type="button">Submit Post
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 </body>
 </html>

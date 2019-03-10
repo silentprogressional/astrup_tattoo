@@ -2,25 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a7dcf3c-7af2-43ce-a6bf-4ec8f32c9b66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/myApp/errorPageAdmin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/myApp/headerErrorPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/myApp/js/addComment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/myApp/js/addPost.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/myApp/media/blogPageBackGround.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoPersonalWebPage/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoPersonalWebPage/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myApp/img/portfolio/cabin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myApp/img/portfolio/cake.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myApp/img/portfolio/circus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myApp/img/portfolio/game.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myApp/img/portfolio/safe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myApp/img/portfolio/submarine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myApp/mail/contact_me.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myApp/media/adminAvatars/postphoto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myApp/media/postPics/vesikalık_linkedin.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/myApp/media/adminAvatars/Vesikalık.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/myApp/media/postPics/postphoto.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/myApp/media/postPics/postpic.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/myApp/media/selfie.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/myApp/addPost.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/addPost.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myApp/blogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/blogPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myApp/errorpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/errorpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myApp/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/myApp/headerErrorPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/headerErrorPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/myApp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/myApp/postPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/postPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/myApp/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/register.html" afterDir="false" />
     </list>
     <list id="1ddd0df8-ed2a-4df7-8234-bd3515c635cf" name="venv" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,28 +38,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -72,95 +46,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/myApp/blogPage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myApp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
+            <state relative-caret-position="321">
+              <caret line="140" selection-start-line="140" selection-end-line="140" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/myApp/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="3" selection-start-line="3" selection-end-line="26" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/myApp/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="50" lean-forward="true" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#body#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/myApp/headerErrorPage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-417">
-              <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/myApp/errorpage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="33" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myApp/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/djangoPersonalWebPage/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-              <folding>
-                <element signature="e#645#677#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/myApp/errorPageAdmin.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -177,18 +70,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>blog</find>
-      <find>&lt;img class=&quot;img-fluid rounded mb-3 mb-md-0&quot; src=&quot;http://placehold.it/700x300&quot; alt=&quot;&quot;&gt;</find>
-      <find>Project</find>
-      <find>img</find>
-      <find>main pa</find>
-      <find>Vesika</find>
-      <find>file</find>
-      <find>about</find>
-      <find>src</find>
-      <find>addc</find>
-      <find>create</find>
-      <find>mess</find>
       <find>padd</find>
       <find>css</find>
       <find>email</find>
@@ -205,8 +86,20 @@
       <find>med</find>
       <find>Hua</find>
       <find>.scss</find>
-      <find>add new</find>
       <find>err</find>
+      <find>.js</find>
+      <find>adm</find>
+      <find>by</find>
+      <find>inst</find>
+      <find>scr</find>
+      <find>sc</find>
+      <find>script</find>
+      <find>d-none</find>
+      <find>self</find>
+      <find>all</find>
+      <find>img</find>
+      <find>drive</find>
+      <find>add new</find>
     </findStrings>
     <replaceStrings>
       <replace>../../js/</replace>
@@ -246,25 +139,27 @@
         <option value="$PROJECT_DIR$/templates/registration/password_reset_done.html" />
         <option value="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" />
         <option value="$PROJECT_DIR$/templates/registration/password_reset_complete.html" />
-        <option value="$PROJECT_DIR$/templates/myApp/register.html" />
         <option value="$PROJECT_DIR$/static/myApp/Css/addPost.css" />
         <option value="$PROJECT_DIR$/djangoPersonalWebPage/urls.py" />
         <option value="$PROJECT_DIR$/templates/myApp/adminPage.html" />
         <option value="$PROJECT_DIR$/myApp/forms.py" />
-        <option value="$PROJECT_DIR$/templates/myApp/postPage.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/templates/myApp/index.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/myApp/sendEmail.py" />
         <option value="$PROJECT_DIR$/djangoPersonalWebPage/settings.py" />
         <option value="$PROJECT_DIR$/myApp/models.py" />
-        <option value="$PROJECT_DIR$/templates/myApp/addPost.html" />
         <option value="$PROJECT_DIR$/templates/myApp/blogPage.html" />
-        <option value="$PROJECT_DIR$/templates/myApp/header.html" />
-        <option value="$PROJECT_DIR$/templates/myApp/headerErrorPage.html" />
         <option value="$PROJECT_DIR$/templates/myApp/errorPageAdmin.html" />
         <option value="$PROJECT_DIR$/templates/myApp/errorpage.html" />
+        <option value="$PROJECT_DIR$/templates/myApp/headerErrorPage.html" />
+        <option value="$PROJECT_DIR$/static/myApp/js/addPost.js" />
+        <option value="$PROJECT_DIR$/templates/myApp/register.html" />
+        <option value="$PROJECT_DIR$/templates/myApp/header.html" />
+        <option value="$PROJECT_DIR$/static/myApp/js/addComment.js" />
+        <option value="$PROJECT_DIR$/templates/myApp/postPage.html" />
+        <option value="$PROJECT_DIR$/templates/myApp/addPost.html" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/templates/myApp/index.html" />
         <option value="$PROJECT_DIR$/myApp/views.py" />
       </list>
     </option>
@@ -288,57 +183,13 @@
             <path>
               <item name="djangoPersonalWebPage" type="b2602c69:ProjectViewProjectNode" />
               <item name="djangoPersonalWebPage" type="462c0819:PsiDirectoryNode" />
-              <item name="djangoPersonalWebPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangoPersonalWebPage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoPersonalWebPage" type="462c0819:PsiDirectoryNode" />
               <item name="myApp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="djangoPersonalWebPage" type="b2602c69:ProjectViewProjectNode" />
               <item name="djangoPersonalWebPage" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangoPersonalWebPage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoPersonalWebPage" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="myApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangoPersonalWebPage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoPersonalWebPage" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="myApp" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangoPersonalWebPage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoPersonalWebPage" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="myApp" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="adminAvatars" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangoPersonalWebPage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoPersonalWebPage" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="myApp" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="postPics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangoPersonalWebPage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoPersonalWebPage" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangoPersonalWebPage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoPersonalWebPage" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="myApp" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -357,19 +208,19 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/myApp/media" />
+      <recent name="$PROJECT_DIR$/static/myApp/img/portfolio" />
+      <recent name="$PROJECT_DIR$/static/myApp/media/adminAvatars" />
+      <recent name="$PROJECT_DIR$/static/myApp/media/postPics" />
+      <recent name="$PROJECT_DIR$/static/myApp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/myApp/media/postPics" />
       <recent name="$PROJECT_DIR$/static/myApp/media/readme" />
       <recent name="$PROJECT_DIR$/static/myApp/media" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/static/myApp/media/static/myApp/media" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/myApp/img/portfolio" />
-      <recent name="$PROJECT_DIR$/static/myApp/media/adminAvatars" />
-      <recent name="$PROJECT_DIR$/static/myApp/media/postPics" />
-      <recent name="$PROJECT_DIR$/static/myApp" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -478,7 +329,9 @@
       <workItem from="1551891365693" duration="761000" />
       <workItem from="1551894262376" duration="3427000" />
       <workItem from="1551897947742" duration="210000" />
-      <workItem from="1552065302948" duration="5458000" />
+      <workItem from="1552065302948" duration="5895000" />
+      <workItem from="1552110748517" duration="4934000" />
+      <workItem from="1552239100991" duration="1748000" />
     </task>
     <task id="LOCAL-00001" summary="commit venv">
       <created>1550084049139</created>
@@ -519,19 +372,42 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112634000" />
+    <option name="totallyTimeSpent" value="119753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2067239" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21244635" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32771084" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.27831325" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38795182" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32891566" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.15542169" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.34574467" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007153" side_tool="true" weight="0.27831325" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32871288" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.328541" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.28826895" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20958512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32771084" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.27831325" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.16144578" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38795182" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -547,7 +423,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.328541" />
       <window_info anchor="right" id="Database" order="4" weight="0.28826895" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -565,12 +441,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/myApp/views.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myApp/views.py</url>
-          <line>57</line>
+          <line>64</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
@@ -578,6 +449,16 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>parameters['name']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>parameters</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>request.POST.get('image').split('.')[0] + '.jpg'</expression-string>
         <language-id>Python</language-id>
@@ -613,127 +494,13 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>str(datetime.datetime.today()).split()[0].split('-')[1]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>str(datetime.datetime.today()).split()[0]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://c9a3e714-ae10-4349-a309-a15192d0faaa/schema/main/table/myApp_comments" />
-    <entry file="das://c9a3e714-ae10-4349-a309-a15192d0faaa/schema/main/table/myApp_contacts" />
-    <entry file="file://$PROJECT_DIR$/static/myApp/Css/addPost.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://562b45f1-ca65-44cb-80ed-8b2542bd3566/schema/main/table/myApp_users" />
-    <entry file="file://$PROJECT_DIR$/myApp/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://562b45f1-ca65-44cb-80ed-8b2542bd3566/schema/main/table/django_admin_log" />
-    <entry file="das://562b45f1-ca65-44cb-80ed-8b2542bd3566/schema/main/table/myApp_comments" />
-    <entry file="file://$PROJECT_DIR$/static/myApp/img/portfolio/djangoproject.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myApp/adminPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="96" selection-start-line="9" selection-start-column="96" selection-end-line="9" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myApp/forgotPass.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myApp/passwordChangeSuccess.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myApp/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="70" selection-start-line="47" selection-start-column="70" selection-end-line="47" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myApp/successpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://562b45f1-ca65-44cb-80ed-8b2542bd3566/schema/main/table/myApp_posts" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/babf3574-7622-4ca1-bbd7-1c7045f001f2/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://babf3574-7622-4ca1-bbd7-1c7045f001f2/schema/main/table/myApp_posts" />
-    <entry file="file://$PROJECT_DIR$/templates/myApp/postPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="845">
-          <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://babf3574-7622-4ca1-bbd7-1c7045f001f2/schema/main/table/myApp_users" />
-    <entry file="file://$PROJECT_DIR$/static/myApp/media/readme/readme1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="das://1d1dd1dc-9aae-4433-9f9b-4022ee777ecc/schema/main/table/myApp_users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1d1dd1dc-9aae-4433-9f9b-4022ee777ecc/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/myApp/media/logo1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/myApp/media/Avatar_boy.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/myApp/img/postphoto.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/myApp/img/portfolio/cabin.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/myApp/img/portfolio/cake.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/myApp/img/portfolio/circus.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/myApp/img/portfolio/safe.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/myApp/media/adminAvatars/postphoto.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/myApp/media/postPics/vesikalık_linkedin.JPG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/myApp/media/postPics/postphoto.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/myApp/img/portfolio/circus.png" />
+    <entry file="file://$PROJECT_DIR$/static/myApp/img/portfolio/safe.png" />
+    <entry file="file://$PROJECT_DIR$/static/myApp/media/adminAvatars/postphoto.png" />
+    <entry file="file://$PROJECT_DIR$/static/myApp/media/postPics/vesikalık_linkedin.JPG" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -741,12 +508,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/myApp/mail/contact_me.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/myApp/img/portfolio/game.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/myApp/mail/contact_me.php" />
+    <entry file="file://$PROJECT_DIR$/static/myApp/img/portfolio/game.png" />
     <entry file="file://$PROJECT_DIR$/myApp/sendEmail.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -757,27 +520,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://c884230a-d0b5-439f-82ba-602e83a51377/schema/main/table/myApp_users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://c884230a-d0b5-439f-82ba-602e83a51377/schema/main/table/myApp_users" />
     <entry file="file://$PROJECT_DIR$/djangoPersonalWebPage/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="130" column="45" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="391">
-            <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -791,62 +538,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myApp/addPost.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://238ff8a4-d5ce-45ab-8f69-9edf36f3b9bf/schema/main/table/myApp_users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://238ff8a4-d5ce-45ab-8f69-9edf36f3b9bf/schema/main/table/myApp_posts">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myApp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="3" selection-start-line="3" selection-end-line="26" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myApp/blogPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myApp/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="50" lean-forward="true" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myApp/errorPageAdmin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://238ff8a4-d5ce-45ab-8f69-9edf36f3b9bf/schema/main/table/myApp_users" />
+    <entry file="das://238ff8a4-d5ce-45ab-8f69-9edf36f3b9bf/schema/main/table/myApp_posts" />
     <entry file="file://$PROJECT_DIR$/myApp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        <state relative-caret-position="102">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -855,11 +552,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/djangoPersonalWebPage/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
+        <state relative-caret-position="289">
           <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           <folding>
             <element signature="e#645#677#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://238ff8a4-d5ce-45ab-8f69-9edf36f3b9bf/schema/main/table/myApp_comments" />
+    <entry file="file://$PROJECT_DIR$/templates/myApp/headerErrorPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/django/core/handlers/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/myApp/js/contact_me.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#76#83#1" expanded="true" />
+            <element signature="e#76#83#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/myApp/js/addPost.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/myApp/adminPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/myApp/blogPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -870,17 +613,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myApp/headerErrorPage.html">
+    <entry file="file://$PROJECT_DIR$/templates/myApp/errorPageAdmin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-417">
-          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/myApp/forgotPass.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/myApp/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/myApp/passwordChangeSuccess.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/myApp/js/addComment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://5ed391aa-41b9-4b80-98d5-9c21e55773f8/schema/main/table/myApp_comments" />
+    <entry file="das://5ed391aa-41b9-4b80-98d5-9c21e55773f8/schema/main/table/myApp_contacts" />
+    <entry file="das://5ed391aa-41b9-4b80-98d5-9c21e55773f8/schema/main/table/myApp_posts" />
+    <entry file="file://$PROJECT_DIR$/templates/myApp/postPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="153" column="31" selection-start-line="153" selection-start-column="31" selection-end-line="153" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/myApp/user_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/myApp/successpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/myApp/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="56" column="22" selection-start-line="55" selection-start-column="26" selection-end-line="56" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0f52888b-2b77-4879-a2e8-fc92135c2010/schema/main/table/myApp_users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0f52888b-2b77-4879-a2e8-fc92135c2010/schema/main/table/myApp_posts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/myApp/addPost.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/myApp/media/adminAvatars/Vesikalik.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/myApp/media/postPics/postpic.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/myApp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="144" column="12" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/myApp/media/blogPageBackGround.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/myApp/media/selfie.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/myApp/media/logo1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/myApp/media/Avatar_boy.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="das://e03146fd-eb95-40e9-8410-4cdf270eb674/schema/main/table/myApp_posts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://e03146fd-eb95-40e9-8410-4cdf270eb674/schema/main/table/myApp_users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myApp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
+        <state relative-caret-position="321">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>

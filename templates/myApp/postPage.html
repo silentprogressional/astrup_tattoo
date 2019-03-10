@@ -59,7 +59,7 @@
         <!-- Author -->
         <p class="lead">
           by
-          <a href="#">{{ post.author.username }}</a>
+          <a href="https://medium.com/baturayucer" target="_blank">{{ post.author.username }}</a>
         </p>
 
         <hr>
@@ -93,6 +93,7 @@
           <div class="media-body">
             <h5 class="mt-0">{{ com.commenter }}</h5>
             {{ com.comment }}
+            <p style="font-size: 12px; color: darkgrey">Commented on {{ com.commentDate }}</p>
           </div>
         </div>
           {% endfor %}
@@ -111,36 +112,6 @@
                 <textarea id="comment" class="form-control" rows="2"></textarea>
               </div>
               <button id="btnClick" onclick="clickFunc()" type="button" class="btn btn-primary">Submit</button>
-                <script>
-                    function clickFunc() {
-                      var url_string = window.location.href;
-                      var url = new URL(url_string);
-                      var postid = url.searchParams.get("postid");
-                      var comment = $("textarea#comment").val();
-                      var name = $("textarea#name").val();
-                            $.ajax({
-                                url: "/addComment",
-                                type: "POST",
-                                data: {
-                                    comment: comment,
-                                    name: name,
-                                    postid: postid,
-
-                                },
-                                cache: false,
-                                success: function() {
-                                    // Enable button & show success message
-                                    $("#success-alert").show();
-                                    setTimeout(function() { location.reload(); }, 2000);
-
-                                },
-                                error: function() {
-                                    // Fail message
-                                    $("#fail-alert").show();
-                                },
-                            })
-                    }
-                </script>
             </form>
           </div>
         </div>
@@ -191,6 +162,7 @@
   <script src="../../static/myApp/vendor/jquery/jquery.min.js"></script>
   <script src="../../static/myApp/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="../../static/myApp/js/addComment.js"></script>
 
 </body>
 </html>

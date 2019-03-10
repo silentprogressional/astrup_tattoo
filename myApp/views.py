@@ -17,21 +17,27 @@ import datetime
 # Create your views here.
 
 
-@login_required()
+@login_required
 def adminPage(request):
     return render(request, 'myApp/adminPage.html')
 
 
 @csrf_exempt
 def addComment(request):
-    try:
+
+    def getParameters():
         commenttext = request.POST.get('comment')
         name = request.POST.get('name')
         postid = request.POST.get('postid')
+        parameters = {'comment': commenttext, 'name': name, 'postid': postid}
+        return parameters
+
+    try:
+        parameters = getParameters()
         today = str(datetime.datetime.today()).split()[0].split('-')
         commentedOn = f"{today[2]}/{today[1]}/{today[0]}"
-        comment = models.Comments.objects.create(commenter=name, commentDate=commentedOn,
-                                                 comment=commenttext, post=models.Posts.objects.get(pk=postid))
+        comment = models.Comments.objects.create(commenter=parameters['name'], commentDate=commentedOn,
+                                                 comment=parameters['comment'], post=models.Posts.objects.get(pk=parameters['postid']))
         comment.save()
         return HttpResponse('')
     except Exception as a:
