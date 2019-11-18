@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="Baturay">
 
-  <title>Baturay Ucer Personal Page</title>
+  <title>Nate Astrup</title>
 
   <!-- Bootstrap core CSS -->
   <link href="../../static/myApp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,10 +29,10 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+  <nav style="background-color:#529B9C" class="navbar navbar-expand-lg fixed-top text-uppercase" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <img  src="../../static/myApp/media/logo1.png" alt="Logo" style="width:200px">
+          <img  src="../../static/myApp/media/complogo.jpg" alt="Logo" style="max-width:50px">
       </a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
@@ -41,16 +41,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Software Projects</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Current Projects</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About Me</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
           </li>
             <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href={% url 'blogPage' %}>Posts </a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href={% url 'blogPage' %}>My Posts</a>
           </li>
         </ul>
       </div>
@@ -58,36 +58,28 @@
   </nav>
 
   <!-- Header -->
-  <header class="masthead bg-primary text-white text-center">
+  <header style="background-image: linear-gradient(#529B9C, #D27575);" class="masthead text-white text-center">
     <div class="container">
-      <img class="img-fluid mb-5 d-block mx-auto" src="../../static/myApp/media/selfie.jpg" alt="" style="width: 300px; border-radius: 50%;">
-      <h1 class="text-uppercase mb-0">Taha Baturay Ucer</h1>
-      <hr class="star-light">
-      <h2 class="font-weight-light mb-0">Computer Engineer - Software Developer</h2>
+      <img class="img-fluid mb-5 d-block mx-auto" src="../../static/myApp/media/selfie.png" alt="" style="width: 300px; border-radius: 50%;">
+      <h1 class="text-uppercase mb-5">Hi, I'm Nate!</h1>
+      <h2 class="font-weight-light mb-5">Craftsman | Futurist | Longboarder</h2>
     </div>
       <br>
       <div class="col-md-4 mb-5 mb-lg-0" style="margin:auto;width: 50%">
           <ul class="list-inline mb-0">
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/baturayucer" target="_blank">
-                <i class="fab fa-fw fa-github"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/baturayucer/" target="_blank">
-                <i class="fab fa-fw fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/baturayucer1" target="_blank">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/ChiefZenOfficer" target="_blank">
                 <i class="fab fa-fw fa-twitter"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/baturayucer/" target="_blank">
-                <i class="fab fa-fw fa-instagram"></i>
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/nate-a/" target="_blank">
+                <i class="fab fa-fw fa-linkedin-in"></i>
               </a>
-            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/natethegreat1989" target="_blank">
+                <i class="fab fa-fw fa-github"></i>
+              </a>
           </ul>
         </div>
   </header>
@@ -95,21 +87,67 @@
   <!-- Portfolio Grid Section -->
   <section class="portfolio" id="portfolio">
     <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Projects</h2>
+      <h2 class="text-center text-uppercase text-secondary mb-0">What I'm Working On</h2>
       <hr class="star-dark mb-5">
       <div class="row">
-        <div class="col-md-6 col-lg-6">
-            <h2 style="font-size: 20px" class="text-center text-secondary mb-0">Python-Django Personal Web Page</h2> <br>
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+        <div class="col-sm">
+            <h2 style="font-size: 20px" class="text-center text-secondary mb-0">#100 Days of Code</h2> <br>
+          <a class="portfolio-item d-block mx-auto" href="#100days">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="../../static/myApp/img/portfolio/djangoproject.png" alt="">
+            <img class="img-fluid" src="../../static/myApp/img/portfolio/100days.jpg" alt="">
           </a>
         </div>
-        <div class="col-md-6 col-lg-6">
+        <div class="col-sm">
+            <h2 style="font-size: 20px" class="text-center text-secondary mb-0">Professional Portfolio</h2> <br>
+          <a class="portfolio-item d-block mx-auto" href="#portfolio1">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="../../static/myApp/img/portfolio/portfolio.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm">
+            <h2 style="font-size: 20px" class="text-center text-secondary mb-0">PROPULSE</h2> <br>
+          <a class="portfolio-item d-block mx-auto" href="#propulse">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="../../static/myApp/img/portfolio/springproject.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+            <h2 style="font-size: 20px" class="text-center text-secondary mb-0">Tattoo Artist Website</h2> <br>
+          <a class="portfolio-item d-block mx-auto" href="#tattoo">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="../../static/myApp/img/portfolio/noahportfolio.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm">
+            <h2 style="font-size: 20px" class="text-center text-secondary mb-0">Strava Workout API Feed</h2> <br>
+          <a class="portfolio-item d-block mx-auto" href="#strava">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="../../static/myApp/img/portfolio/strava.png" alt="">
+          </a>
+        </div>
+        <div class="col-sm">
             <h2 style="font-size: 20px" class="text-center text-secondary mb-0">Spring-Java Online Reservation Web App</h2> <br>
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -121,25 +159,30 @@
           </a>
         </div>
       </div>
-      </div>
   </section>
 
   <!-- About Section -->
-  <section class="bg-primary text-white mb-0" id="about">
+  <section style="background-color: #D27575;" class="text-white mb-0" id="about">
     <div class="container">
-      <h2 class="text-center text-uppercase text-white">About</h2>
-      <hr class="star-light mb-5">
+      <h2 class="text-center text-uppercase text-white mb-5">About Me</h2>
       <div class="row">
-        <div class="col-lg-4 m-auto">
-          <p class="lead">A software developer who has graduated with a Bachelor's Degree of Computer Engineering. <br>
-              I enjoy being challenged and engaging with projects that require me to work outside my comfort and knowledge set,
-              as continuing to learn new languages and development techniques are important to me and the success of projects.</p>
+        <div class="col-lg-10 m-auto">
+          <p class="lead">Hello Friend! Thanks for viewing my portfolio - it's no coincidence you're here. Here's a bit about me and what I've been working on.</p>
+          <p class="lead">
+             I'm a 30 year old self taught software developer and entreprenuer. I'm passionate about thoughtfully using technology to solve real problems that we all run into as humans.
+              From my diverse background I have a unique ear tuned for the little voice that says "wouldn't it be great if..." and I'm compelled to quickly go test those solutions. For most of my adult life I worked outside of the
+              technology industry - oftentimes using software to supercharge my capabilities as a worker. After being unable to bring those ideas to life for so long, I jumped head first into learning software development!
+          </p>
+          <p class="lead">
+              Today you could find me working on developing software for businesses and artists in Wynwood. Longboarding with sk8pak on SoBe. I am at my best when my routine is "squared away" and includes a lot of excersize,
+            journaling, and time blocked out to strategicly hit goals. Like an engine I like to fire on all cyclendars - and strategiclly do so. </p>
+          <p>
         </div>
       </div>
       <div class="text-center mt-4">
         <a class="btn btn-xl btn-outline-light"
-           href="https://drive.google.com/file/d/14QYiiXv0j-lx3EPLt2lHofHNtRnbcKOM/view?usp=sharing" target="_blank">
-            <i class="fas fa-download mr-2"></i> Check My CV out! </a>
+           href="https://docs.google.com/document/d/1k8uTzWlXHfCH0sJ9z3vAZZyfwq0GHrJfhszvIx7J8Go/edit?usp=sharing" target="_blank">
+            <i class="fas fa-download mr-2"></i> View my Resume </a>
       </div>
     </div>
   </section>
@@ -149,6 +192,7 @@
     <div class="container">
       <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
       <hr class="star-dark mb-5">
+      <h4 class="mb-5" style="text-align: center;">Feel free to reach out! I'm always excited to meet other and share ideas.</h4>
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
@@ -195,53 +239,38 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer text-center">
+  <footer style="background-color:#529B9C" class="footer text-center">
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-5 mb-lg-0">
           <h4 class="text-uppercase mb-4">Location</h4>
-          <p class="lead mb-0">Istanbul / Turkey
-        </p>
+          <p class="lead mb-0">Miami, FL / Cleveland, Ohio</p>
         </div>
         <div class="col-md-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          <h4 class="text-uppercase mb-4">Connect with me</h4>
           <ul class="list-inline mb-0">
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/baturayucer" target="_blank">
-                <i class="fab fa-fw fa-github"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/baturayucer/" target="_blank">
-                <i class="fab fa-fw fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/baturayucer1" target="_blank">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/ChiefZenOfficer" target="_blank">
                 <i class="fab fa-fw fa-twitter"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/baturayucer/" target="_blank">
-                <i class="fab fa-fw fa-instagram"></i>
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/nate-a/" target="_blank">
+                <i class="fab fa-fw fa-linkedin-in"></i>
               </a>
-            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/natethegreat1989" target="_blank">
+                <i class="fab fa-fw fa-github"></i>
+              </a>
           </ul>
-        </div>
-        <div class="col-md-4">
-          <h4 class="text-uppercase mb-4">Admin Login</h4>
-          <p class="lead mb-0">If you are an admin please login:
-            <a href={% url 'adminPage' %}>here</a></p>
-        </div>
+      </div>
+      <div class="col-md-4 mb-5 mb-lg-0">
+        <h4 class="text-uppercase mb-4">Consulting / Contract</h4>
+        <p class="lead mb-0">Please reach out with your inquiry above.</p>
       </div>
     </div>
   </footer>
 
-  <div class="copyright py-4 text-center text-white">
-    <div class="container">
-      <small>Copyright &copy; baturayucer.com 2019</small>
-    </div>
-  </div>
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
   <div class="scroll-to-top d-lg-none position-fixed ">
@@ -250,10 +279,10 @@
     </a>
   </div>
 
-  <!-- Portfolio Modals -->
+  <!-- Portfolio Modals Row 1 -->
 
-  <!-- Portfolio Modal 1 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+  <!-- Portfolio Modal 100days -->
+  <div class="portfolio-modal mfp-hide" id="100days">
     <div class="portfolio-modal-dialog bg-white">
       <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
         <i class="fa fa-3x fa-times"></i>
@@ -261,24 +290,24 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">baturayucer.com</h2>
+            <h2 class="text-secondary text-uppercase mb-0">#100 Days of Code</h2>
             <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="../../static/myApp/img/portfolio/djangoproject.png" alt="">
-            <p class="mb-5">I've developed my personal web page with using Django Python framework.</p>
-            <a class="btn btn-primary btn-lg rounded-pill" href="https://github.com/baturayucer/djangoPersonalWebPage" target="_blank">
+            <img class="img-fluid mb-5" src="../../static/myApp/img/portfolio/100days.jpg" alt="">
+            <p class="mb-5">#100 Days of Code is an online challenge... insert text from the site.</p>
+            <a class="btn btn-primary btn-lg rounded-pill" href="https://github.com/natethegreat1989/100-days-of-code/blob/master/log.md" target="_blank">
               <i class="fa fa-close"></i>
-              See Project on Github</a>
+              My Daily Log</a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a class="btn btn-primary btn-lg rounded-pill" href="https://baturayucer.com/" target="_blank">
+              <a class="btn btn-primary btn-lg rounded-pill" href="https://www.100daysofcode.com/" target="_blank">
               <i class="fa fa-close"></i>
-              Checkout Live Demo</a>
+              Vist #100days</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+  <!-- Portfolio Modal portfolio1 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio1">
     <div class="portfolio-modal-dialog bg-white">
       <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
         <i class="fa fa-3x fa-times"></i>
@@ -286,22 +315,116 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Spring Boot Online Reservation App</h2>
+            <h2 class="text-secondary text-uppercase mb-0">Portfolio Site</h2>
             <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="../../static/myApp/img/portfolio/springproject.png" alt="">
-              <p class="mb-5"><b>Keywords: SpringBoot, Spring Security, Docker, Travis-ci</b> <br>
-                This app allows you to book a reservation for a spesific event. <br>
-There are two calendar views as weekly and monthly.<br>
-Users are able to book on a daily and hourly basis.<br>
-Reservations have been kept in a stable database and the connection between the calendar view using rest services and synchronization have been established.</p>
-            <a class="btn btn-primary btn-lg rounded-pill" href="https://github.com/baturayucer/Full-Stack-Spring-Boot-Reservation-App" target="_blank">
+            <img class="img-fluid mb-5" src="../../static/myApp/img/portfolio/portfolio.jpg" alt="">
+            <p class="mb-5">You're looking at it! I built this site so people like you can find out more about me and what I like to do. </p>
+            <a class="btn btn-primary btn-lg rounded-pill" href="https://github.com/natethegreat1989/portfolio" target="_blank">
               <i class="fa fa-close"></i>
-              See Project on Github</a>
-          </div>
+              View Source Code</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Portfolio Modal propulse -->
+  <div class="portfolio-modal mfp-hide" id="propulse">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">PROPULSE</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="../../static/myApp/img/portfolio/100days.jpg" alt="">
+            <p class="mb-5">Propulse is a real estate market network brought together to cultive a strong more technology driven Real Estate industry. Currently in development and customer feedback phase.
+            The minimum viable product looks to better connect everyone in the R.E. space to products & leaders who are engaging and driving innovation.</p>
+            <a class="btn btn-primary btn-lg rounded-pill" href="https://github.com/natethegreat1989/propulse" target="_blank">
+              <i class="fa fa-close"></i>
+              View Code</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modals Row 2 -->
+
+  <!-- Portfolio Modal tattoo -->
+  <div class="portfolio-modal mfp-hide" id="tattoo">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Tattoo Artist Website</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="../../static/myApp/img/portfolio/100days.jpg" alt="">
+            <p class="mb-5">Working with artsists is one of my favorite things to do. Check out this cool website that shows off my brother Noah's amazing skills!</p>
+            <a class="btn btn-primary btn-lg rounded-pill" href="https://www.instagram.com/astrup_tattoo/?hl=en" target="_blank">
+              <i class="fa fa-close"></i>
+              Follow Noah</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a class="btn btn-primary btn-lg rounded-pill" href="https://www.100daysofcode.com/" target="_blank">
+              <i class="fa fa-close"></i>
+              View Source Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal strava -->
+  <div class="portfolio-modal mfp-hide" id="strava">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">My Strava Workout Feed</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="../../static/myApp/img/portfolio/strava.png" alt="">
+            <p class="mb-5">I'm building a feed that shows all my workouts posted to Strava. This is one example of performance data generated that can be used to keep score of, quantify, and gamify personal performance. </p>
+            <a class="btn btn-primary btn-lg rounded-pill" href="https://github.com/natethegreat1989/portfolio" target="_blank">
+              <i class="fa fa-close"></i>
+              View Source Code</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal propulse -->
+  <div class="portfolio-modal mfp-hide" id="propulse">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">PROPULSE</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="../../static/myApp/img/portfolio/100days.jpg" alt="">
+            <p class="mb-5">Propulse is a real estate market network brought together to cultive a strong more technology driven Real Estate industry. Currently in development and customer feedback phase.
+            The minimum viable product looks to better connect everyone in the R.E. space to products & leaders who are engaging and driving innovation.</p>
+            <a class="btn btn-primary btn-lg rounded-pill" href="https://github.com/natethegreat1989/propulse" target="_blank">
+              <i class="fa fa-close"></i>
+              View Code</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="../../static/myApp/vendor/jquery/jquery.min.js"></script>
