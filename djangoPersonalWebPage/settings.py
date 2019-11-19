@@ -32,7 +32,7 @@ SECRET_KEY = 'x@*h^=kct_3m=3jct(go4wt@e5hizxwz2qk5)22o%l&1a+r8-1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['portfolioappnate.herokuapp.com']
 
 
 # Application definition
