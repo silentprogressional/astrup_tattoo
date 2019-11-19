@@ -16,7 +16,7 @@ def sendmail(body, target=EMAIL_SETTINGS['target']):
     message = MIMEMultipart()
     message["From"] = sender_email
     message["To"] = receiver_email
-    message["Subject"] = "baturayucer.com"
+    message["Subject"] = "Nate Astrup"
     message.attach(MIMEText(body, "plain"))
     context = ssl.create_default_context()
     with smtplib.SMTP(smtp_server, port) as server:
