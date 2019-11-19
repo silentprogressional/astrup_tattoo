@@ -50,7 +50,8 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
           </li>
             <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href={% url 'blogPage' %}>My Posts</a>
+              <!-- <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href={% url 'blogPage' %}>My Posts</a> -->
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">My Posts</a>
           </li>
         </ul>
       </div>
@@ -60,8 +61,8 @@
   <!-- Header -->
   <header style="background-image: linear-gradient(#529B9C, #D27575);" class="masthead text-white text-center">
     <div class="container">
-      <img class="img-fluid mb-5 d-block mx-auto" src="../../static/myApp/media/selfie.png" alt="" style="width: 300px; border-radius: 50%;">
-      <h1 class="text-uppercase mb-5">Hi, I'm Nate!</h1>
+      <img class="img-fluid mb-5 d-block mx-auto" src="../../static/myApp/media/selfie.png" alt="" style="width: 500px; border-radius: 50%;">
+      <h1 class="mb-5">Hi, I'm Nate!</h1>
       <h2 class="font-weight-light mb-5">Craftsman | Futurist | Longboarder</h2>
     </div>
       <br>
@@ -87,8 +88,9 @@
   <!-- Portfolio Grid Section -->
   <section class="portfolio" id="portfolio">
     <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">What I'm Working On</h2>
+      <h2 class="text-center text-uppercase text-secondary mb-5">What I'm Working On</h2>
       <hr class="star-dark mb-5">
+      <h3 class="text-center font-weight-light mb-5">Most days you can find me writing code, working to help businesses grow, or staying active and fit! Check out my current projects. </h2>
       <div class="row">
         <div class="col-sm">
             <h2 style="font-size: 20px" class="text-center text-secondary mb-0">#100 Days of Code</h2> <br>
@@ -113,14 +115,14 @@
           </a>
         </div>
         <div class="col-sm">
-            <h2 style="font-size: 20px" class="text-center text-secondary mb-0">PROPULSE</h2> <br>
+            <h2 style="font-size: 20px" class="text-center text-secondary mb-0">Propulse</h2> <br>
           <a class="portfolio-item d-block mx-auto" href="#propulse">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="../../static/myApp/img/portfolio/springproject.png" alt="">
+            <img style="width: 100%; max-height: 250px;" class="img-fluid" src="../../static/myApp/img/portfolio/propulse.png" alt="">
           </a>
         </div>
       </div>
@@ -148,14 +150,14 @@
           </a>
         </div>
         <div class="col-sm">
-            <h2 style="font-size: 20px" class="text-center text-secondary mb-0">Spring-Java Online Reservation Web App</h2> <br>
+            <h2 style="font-size: 20px" class="text-center text-secondary mb-0">Blackrock Impact</h2> <br>
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="../../static/myApp/img/portfolio/springproject.png" alt="">
+            <img style="width: 100%; max-height: 250px;" class="img-fluid" src="../../static/myApp/img/portfolio/blackrock.png" alt="">
           </a>
         </div>
       </div>
@@ -166,19 +168,93 @@
     <div class="container">
       <h2 class="text-center text-uppercase text-white mb-5">About Me</h2>
       <div class="row">
-        <div class="col-lg-10 m-auto">
-          <p class="lead">Hello Friend! Thanks for viewing my portfolio - it's no coincidence you're here. Here's a bit about me and what I've been working on.</p>
+        <div class="col-md-12 m-auto">
+          <p class="lead">Hello Friend! Thanks for viewing my portfolio - it's no coincidence you're here. You're curious about me and what I've been up to, read on!</p>
           <p class="lead">
              I'm a 30 year old self taught software developer and entreprenuer. I'm passionate about thoughtfully using technology to solve real problems that we all run into as humans.
-              From my diverse background I have a unique ear tuned for the little voice that says "wouldn't it be great if..." and I'm compelled to quickly go test those solutions. For most of my adult life I worked outside of the
-              technology industry - oftentimes using software to supercharge my capabilities as a worker. After being unable to bring those ideas to life for so long, I jumped head first into learning software development!
+              From my diverse background I developed a unique ear tuned for the little voice that says "wouldn't it be great if..." and I'm compelled to quickly go test those solutions. For most of my adult life I worked outside of the
+              technology industry - oftentimes using software to supercharge my capabilities as a worker. After being unable to bring my ideas to life for so long, I jumped head first into learning software development! Now, I'm able to apply
+              those many years of experience spanning from EMS/Fire, Military, and Business to my daily work.
           </p>
           <p class="lead">
-              Today you could find me working on developing software for businesses and artists in Wynwood. Longboarding with sk8pak on SoBe. I am at my best when my routine is "squared away" and includes a lot of excersize,
-            journaling, and time blocked out to strategicly hit goals. Like an engine I like to fire on all cyclendars - and strategiclly do so. </p>
+              Today you can find me working on new products or busy developing software for businesses and artists in Miami, FL and abroad. Whether I'm designing an Artist's marketing website or creating new revenue streams for a CEO, I take joy
+              in finding the "secrets" that one only comes across when doing the hard thigns. By getting my hands dirty and doing the things others won't I synthesize truth and value. The engines of all good business.
+              I am at my best when my routine is "squared away" and includes a lot of excersize, journaling, and time blocked out to strategicly hit goals. Like an engine I like to fire on all cyclendars - and I am always tweaking and testing to find better results! </p>
           <p>
         </div>
       </div>
+      <div class="portfolio">
+        <h4 style="font-size: 40px" class="text-center mt-5 mb-5">Professional Experience</h4>
+        <div class="row mt-5">
+          <div class="col">
+              <h2 style="font-size: 20px" class="text-center text-white mb-0">Flux Makerspace</h2> <br>
+            <a class="portfolio-item d-block mx-auto" href="#flux">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="../../static/myApp/img/portfolio/flux.png" alt="">
+            </a>
+          </div>
+          <div class="col-sm">
+              <h2 style="font-size: 20px" class="text-center text-white mb-0">Decent Labs</h2> <br>
+            <a class="portfolio-item d-block mx-auto" href="#decent">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="../../static/myApp/img/portfolio/decentlabs.png" alt="">
+            </a>
+          </div>
+          <div class="col-sm">
+              <h2 style="font-size: 20px" class="text-center text-white mb-0">Startup Bus</h2> <br>
+            <a class="portfolio-item d-block mx-auto" href="#bus">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="../../static/myApp/img/portfolio/startupbuslogo.png" alt="">
+            </a>
+          </div>
+          <div class="row mt-5">
+            <div class="col">
+                <h2 style="font-size: 20px" class="text-center text-white mb-0">Digital Forensics Corp.</h2> <br>
+              <a class="portfolio-item d-block mx-auto" href="#dfc">
+                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i class="fas fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="../../static/myApp/img/portfolio/dfc.png" alt="">
+              </a>
+            </div>
+            <div class="col-sm">
+                <h2 style="font-size: 20px" class="text-center text-white mb-0">Keller Williams</h2> <br>
+              <a class="portfolio-item d-block mx-auto" href="#keller">
+                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i class="fas fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="../../static/myApp/img/portfolio/kw.png" alt="">
+              </a>
+            </div>
+            <div class="col-sm">
+                <h2 style="font-size: 20px" class="text-center text-white mb-0">Cleveland Clinic</h2> <br>
+              <a class="portfolio-item d-block mx-auto" href="#clinic">
+                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i class="fas fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="../../static/myApp/img/portfolio/clinic.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
       <div class="text-center mt-4">
         <a class="btn btn-xl btn-outline-light"
            href="https://docs.google.com/document/d/1k8uTzWlXHfCH0sJ9z3vAZZyfwq0GHrJfhszvIx7J8Go/edit?usp=sharing" target="_blank">
@@ -293,7 +369,8 @@
             <h2 class="text-secondary text-uppercase mb-0">#100 Days of Code</h2>
             <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="../../static/myApp/img/portfolio/100days.jpg" alt="">
-            <p class="mb-5">#100 Days of Code is an online challenge... insert text from the site.</p>
+            <p class="mb-5">#100 Days of Code is an online challenge where software developers publicly commit to 100 days of coding. You can follow
+                            my progress on my Github profile by clicking below.</p>
             <a class="btn btn-primary btn-lg rounded-pill" href="https://github.com/natethegreat1989/100-days-of-code/blob/master/log.md" target="_blank">
               <i class="fa fa-close"></i>
               My Daily Log</a>
@@ -318,7 +395,9 @@
             <h2 class="text-secondary text-uppercase mb-0">Portfolio Site</h2>
             <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="../../static/myApp/img/portfolio/portfolio.jpg" alt="">
-            <p class="mb-5">You're looking at it! I built this site so people like you can find out more about me and what I like to do. </p>
+            <p class="mb-5">You're looking at it! I built this site so people just like you can find out more about me and what I like to do. This website is built
+                            on Python/Django backend with HTML, CSS, and Java frontend. This is a work in progress, as am I. Please check back often to see updates and
+                          follow my progress.</p>
             <a class="btn btn-primary btn-lg rounded-pill" href="https://github.com/natethegreat1989/portfolio" target="_blank">
               <i class="fa fa-close"></i>
               View Source Code</a>
@@ -338,9 +417,9 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">PROPULSE</h2>
+            <h2 class="text-secondary text-uppercase mb-0">Propulse - PropTech Platform</h2>
             <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="../../static/myApp/img/portfolio/100days.jpg" alt="">
+            <img style="height: 400px;" class="img-fluid mb-5" src="../../static/myApp/img/portfolio/propulse.png" alt="">
             <p class="mb-5">Propulse is a real estate market network brought together to cultive a strong more technology driven Real Estate industry. Currently in development and customer feedback phase.
             The minimum viable product looks to better connect everyone in the R.E. space to products & leaders who are engaging and driving innovation.</p>
             <a class="btn btn-primary btn-lg rounded-pill" href="https://github.com/natethegreat1989/propulse" target="_blank">
@@ -419,6 +498,150 @@
             <a class="btn btn-primary btn-lg rounded-pill" href="https://github.com/natethegreat1989/propulse" target="_blank">
               <i class="fa fa-close"></i>
               View Code</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About/Experience Modals Row 1 -->
+
+  <!-- Portfolio Modal flux -->
+  <div class="portfolio-modal mfp-hide" id="flux">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Flux Makerspace</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="../../static/myApp/img/portfolio/flux.png" alt="">
+            <p class="mb-5">Flux Makerspace is a technology center for people of all ages to explore, learn, and engage with technology. We provide budding entrepreneurs and technologists with the resources to bring their vision into reality.
+                            As a consultant of Flux it was important to build a strong community around technolog and entreprenuership. On a weekly basis we joined together to teach technology skills, work on independent products, and mastermind new concepts.
+                            Additionally, Flux partners with businesses to place new developers in paid positions. </p>
+            <a class="btn btn-primary btn-lg rounded-pill" href="https://www.fluxmakerspace.com/" target="_blank">
+              <i class="fa fa-close"></i>
+              View Site</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal decent -->
+  <div class="portfolio-modal mfp-hide" id="decent">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Decent Labs</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="../../static/myApp/img/portfolio/decentlabs.png" alt="">
+            <p class="mb-5">decent labs creates innovative products resistant to censorship, fraud, and human error. We partner with forward-thinking businesses to craft solutions never before possible, using blockchain technology.</p>
+            <a class="btn btn-primary btn-lg rounded-pill" href="https://decentlabs.io/" target="_blank">
+              <i class="fa fa-close"></i>
+              View Site</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal bus -->
+  <div class="portfolio-modal mfp-hide" id="bus">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Startup Bus</h2>
+            <hr class="star-dark mb-5">
+            <img style="height: 400px;" class="img-fluid mb-5" src="../../static/myApp/img/portfolio/startupbuslogo.png" alt="">
+            <p class="mb-5">We produce events and content, with the aim to build a community for entrepreneurs to be more successful in their future.
+                            At core, it's an annual competition: you get on a bus with strangers and by the time the bus arrive, you are expected to have launched a startup business. The intensity of the experience is hoped to generated a life-lasting memory, that bonds you with the other participants as you work under pressure to produce something of value.</p>
+            <a class="btn btn-primary btn-lg rounded-pill" href="https://startupbus.com/" target="_blank">
+              <i class="fa fa-close"></i>
+              View Site</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About/Experience Modals Row 2 -->
+
+  <!-- Portfolio Modal dfc -->
+  <div class="portfolio-modal mfp-hide" id="dfc">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Digital Forensics Corp.</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="../../static/myApp/img/portfolio/dfc.png" alt="">
+            <p class="mb-5">Digital Forensics Corp. is a dynamic North American leader in the growing field of digital forensics, with offices across the United States and Canada. DFC works
+                            with corporations, attorneys, private investigators and individuals to uncover digital evidence to support civil, criminal and business investigations.
+                            DFC offers employees the opportunity to learn and advance within the company, while learning about the leading edge technologies associated with cyber-security and digital forensics.</p>
+            <a class="btn btn-primary btn-lg rounded-pill" href="https://www.digitalforensics.com/" target="_blank">
+              <i class="fa fa-close"></i>
+              View Site</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal keller -->
+  <div class="portfolio-modal mfp-hide" id="keller">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Keller Williams</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="../../static/myApp/img/portfolio/kw.png" alt="">
+            <p class="mb-5">Keller Williams Realty, Inc. is the world’s largest real estate franchise by agent count and largest in the U.S. by units sold and sales volume, with over 1,000 offices and 180,000 associates across the the Americas, Europe, Africa and Asia.
+                            The company has grown exponentially since the opening of the first Keller Williams Realty office in 1983, and continues to cultivate an agent-centric, education-based, technology-driven culture that rewards associates as stakeholders. </p>
+            <a class="btn btn-primary btn-lg rounded-pill" href="https://www.kw.com/kw/" target="_blank">
+              <i class="fa fa-close"></i>
+              View Site</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal clinic -->
+  <div class="portfolio-modal mfp-hide" id="clinic">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Cleveland Clinic</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="../../static/myApp/img/portfolio/clinic.png" alt="">
+            <p class="mb-5">Cleveland Clinic, located in Cleveland, Ohio, is a not-for-profit, multispecialty academic medical center that integrates clinical and hospital care with research and education.</p>
+            <a class="btn btn-primary btn-lg rounded-pill" href="https://my.clevelandclinic.org/" target="_blank">
+              <i class="fa fa-close"></i>
+              View Site</a>
               &nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </div>
