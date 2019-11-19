@@ -16,10 +16,10 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 EMAIL_SETTINGS = {
-    "password": "password",
+    "password": "Champion1989*",
     "smtp_server": "smtp.gmail.com",
-    "sender_email": "infobaturay@gmail.com",
-    "target": "baturayucer@gmail.com"
+    "sender_email": "astrupnate@gmail.com",
+    "target": "astrupnate@gmail.com"
 }
 
 
